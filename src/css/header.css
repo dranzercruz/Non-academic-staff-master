@@ -1,0 +1,243 @@
+.header-container{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(166, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-head{
+    width: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 100%;
+    flex-shrink: 0;
+    margin-left: 20px;
+    color: white;
+}
+.head h5{
+    font-size: 1rem;
+}
+.nav-logo{
+    width: fit-content;
+}
+.nav-logo img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+
+
+/* ------- Nav links -------- */
+.nav{
+    width: 100%;
+    flex-shrink: 2;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav p{
+    width: 100px;
+    text-align: end;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.4s;
+}
+.nav p a:hover{
+    color: rgba(0, 0, 0, 0.808);
+    font-weight: 600;
+}
+.nav p a:active{
+    color: white;
+}
+
+
+/* ------- login buton --------- */
+.header-login{
+    width:120px;
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 5px;
+    justify-content: space-evenly;
+}
+.header-login button{
+    background-color: rgb(243, 243, 243);
+    transition: 0.4s all ease-out;
+    padding: 8px 18px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.header-login button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.header-login button:active{
+    cursor: pointer;
+    background-color: rgb(199, 196, 196);
+}
+
+
+
+/* ------header profile -------- */
+.header-profile{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 10px;
+}
+.header-profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.username{
+    color: white;
+    font-size: 0.75rem;
+}
+
+
+
+/*------ side nav -------*/
+#side-nav-btn{
+    position: fixed;
+    top: 90px;
+    right: 0;
+    z-index: 4;
+    width: 40px;
+    height: 45px;
+    background-color: #6f6d6d44;
+    border-radius:  12px 0 0 12px;
+    border: none;
+    box-shadow: 0px 1px 2px 1px #3c3c3c;
+    display: none;
+    transition: 0.3s;
+}
+#side-nav-btn:hover{
+    cursor: pointer;
+    background-color: #635b5b;
+}
+#side-nav-btn:active{
+    background-color: #939393;
+}
+#side-nav-btn img{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+
+
+@media only screen and (max-width: 1440px) {
+    .nav{
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav{
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .nav{
+        display: none;
+    }
+    #side-nav-btn{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 660px) {
+    .header-container{
+        height: 80px;
+    }
+    .head h2{
+        font-size: 1.15rem;
+    }
+    .head h5{
+        font-size: 0.75rem;
+    }
+    .nav-logo img{
+        width: 60px;
+    }
+    .logo-head{
+        margin-left: 10px;
+    }
+    .header-login{
+        width: 140px;
+        margin-right: 0;
+    }
+    .header-login button{
+        padding: 9px 12px;
+        font-size: 0.75rem;
+    }
+    #side-nav-btn{
+        top: 80px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .header-container{
+        height: 70px;
+    }
+    .head h2{
+        font-size: 1rem;
+    }
+    .head h5{
+        font-size: 0.55rem;
+    }
+    .logo-head{
+        gap: 5px;
+    }
+    .nav-logo img{
+        width: 45px;
+    }
+    .logo-head{
+        margin-left: 7px;
+    }
+    .header-login{
+        width: 120px;
+        margin-right: 0;
+    }
+    .header-login button{
+        padding: 8px 11px;
+        font-size: 0.6rem;
+    }
+    #side-nav-btn{
+        width: 35px;
+        height: 40px;
+        top: 70px;
+        display: block;
+    }
+    .header-profile img{
+        width: 25px;
+        height: 25px;
+    }
+    .username{
+        font-size: 0.65rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .head h2{
+        font-size: 0.8rem;
+    }
+    .username{
+        display: none;
+    }
+    .head{
+        display: none;
+    }
+}

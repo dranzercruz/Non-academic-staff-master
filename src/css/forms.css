@@ -1,0 +1,32 @@
+.form-content{
+    margin: 0 auto 50px;
+    width: 80%;
+}
+
+.form-heading{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    border-left: 4px solid rgb(219, 0, 0);
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.form-attributes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    /* background-color: hsla(127, 56%, 74%, 0.911); */
+    border-radius: 18px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-content{
+        width: 90%;
+    }
+    .form-heading{
+        font-size: 1.5rem;
+    }
+}

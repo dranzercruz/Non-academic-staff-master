@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-main{
+    width: 100%;
+    /* height: 100vh; */
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef73;
+
+}
+
+.login-container{
+    border: 1px solid #9b9999;
+    width: 60%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 7px 3px #e5e5e5;
+    background-color: #e4e3e3c6;
+}
+.login-container:hover{
+    box-shadow: 1px 1px 7px 1px #b1b1b1;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo img{
+    border-radius: 50%;
+    width: 110px;
+}
+
+.login-container h1{
+    text-align: center;
+    margin: 0px 0px 7px;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.login-container input{
+    width: 100%;
+    padding: 8px 5px;
+    margin: 5px 0 10px;
+    border-radius: 8px;
+    border: 1px solid #b6b6b6;
+}
+
+#login-email:hover, #login-password:hover{
+    outline-color: #bf2d2db4;
+    outline-width: 0.1px;
+}
+
+#login-email:focus, #login-password:focus{
+    outline-color: rgb(90, 124, 249);
+    outline-width: 0.1px;
+}
+
+.login-container label{
+    margin-bottom: 5px; 
+    font-size: 1.1rem;
+}
+
+.login-btn input{
+    background-color: rgb(204, 20, 20);
+    color: white;
+    font-size: 1rem;
+    border: 1px solid;
+}
+
+.login-btn input:hover{
+    cursor: pointer;
+    background-color: rgb(176, 7, 7);
+}
+
+.login-btn input:active{
+    background-color: rgb(204, 20, 20);
+}
+
+.signup-opt{
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.signup-opt p{
+    color: rgb(204, 20, 20);
+    font-size: 01rem;
+}
+
+.signup-opt input{
+    background-color: rgb(146, 146, 146);
+    color: white;
+    border: 1px solid;
+}
+
+.signup-opt input:hover{
+    cursor: pointer;
+    background-color: rgb(108, 108, 108);
+}
+
+.signup-opt input:active{
+    background-color: rgb(146, 146, 146);
+}
+
+.others{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.others a{
+    font-size: 0.8rem;
+    color: blue;
+}
+
+.others p{
+    font-size: 0.7rem;
+    width: 80%;
+    margin: auto;
+    min-width: 250px;
+    color: #4d4c4c;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .login-container{
+        width: 80%;
+        margin-top: 0px;
+        
+    }
+
+}
